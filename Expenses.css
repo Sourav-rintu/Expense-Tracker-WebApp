@@ -1,0 +1,152 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Lemon');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.header {
+	width:100%;
+	height:65px;
+	background: whitesmoke;
+	box-shadow:0px 0px 10px black;
+	padding:0px 5%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+.header h1 {
+	font-size:22px;
+}
+.header h1 span{
+	color:royalblue;
+	
+}
+.header button {
+	padding:8px 18px;
+	background:royalblue;
+	color:white;
+	outline:none;
+	border:none;
+	border-radius:5px;
+	font-size:15px;
+	cursor:pointer;	
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    background-size: cover;
+}
+.details{
+	width:60%;
+	padding:15px;
+	background: whitesmoke;
+	margin:20px auto;
+	
+}
+.details table{
+	width:100%;
+	height:100%;
+}
+.details table thead{
+	background: royalblue;
+	color: white;
+}
+.details table tbody{
+	background: white;
+}
+.details table tr,
+.details table td,
+.details table th{
+	padding: 8px;
+}
+.details table tr{
+	border-bottom: 3px solid silver;
+}
+.details table td a{
+	text-decoration: none;
+	color: black;
+}
+.details table td a i{
+	font-size: 18px;
+	margin-right: 15px;
+}
+.details table td a i:nth-child(1){
+	color:red;
+}
+
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.popup .field {
+    margin-bottom: 20px;
+}
+
+.popup .field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup .field input[type="text"],
+.popup .field input[type="number"],
+.popup .field input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.popup .action-field {
+    text-align: center;
+}
+
+.popup .action-field input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup .action-field input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Total Expenses Section Styles */
+.total {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.total h2 {
+    color: white;
+    font-size: 24px;
+}
